@@ -14,11 +14,9 @@
    - Type `5` for A* Search (A-star).
 
 2. **Choose an initial state:**
-   - Type `1` for the initial state [[3, 4, 2], [5, 1, 7], [6, 0, 8]].
-   - Type `2` for the initial state [[6, 2, 7], [5, 0, 3], [8, 1, 4]].
-   - Type `3` to enter a custom initial state.
+   - Type `1` to enter a custom initial state.
 
-3. **(Optional) If choosing option `3`:**
+3. **(Optional) If choosing option `1`:**
    - Enter a custom initial state as a 3x3 matrix, separating the numbers by spaces.
 
 The algorithm will run, displaying the result, including the execution time, maximum queue/stack size, the total number of generated nodes, and whether it found the solution, along with the depth of the found solution.
