@@ -19,14 +19,10 @@ def choose_algorithm():
 
 def choose_initial_state():
 
-    print("\nSelect initial state:")
-    for key, value in predefined_states.items():
-        print(f"{key}. {value}")
-
-    print("3. Custom Input")
+    print("1. Custom Input")
     choice = input("\nEnter the number corresponding to your choice: ")
 
-    if choice == "3":
+    if choice == "1":
         state = [
             [
                 int(x)
@@ -38,8 +34,6 @@ def choose_initial_state():
         ]
         if len(state) != 3 or any(len(row) != 3 for row in state):
             raise ValueError("Custom input must be a 3x3 matrix.")
-    else:
-        state = predefined_states.get(choice, None)
 
     if state is None:
         raise ValueError("Invalid choice. State not found.")
